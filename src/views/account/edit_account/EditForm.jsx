@@ -25,6 +25,7 @@ const EditForm = ({ isLoading, authProvider }) => {
         disabled={authProvider !== 'password' || isLoading}
         name="email"
         type="email"
+        readOnly
         label="* Email Address"
         placeholder="test@example.com"
         component={CustomInput}
